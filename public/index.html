@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../public/style.css">
+
+    <title>Happy Chat</title>
+</head>
+
+<body class="body1">
+
+    <div class="container2">
+    <main class="container1">
+        <header class="index_header">
+            <h1 > Welcome to Happy Chat!</h1>
+        </header>
+
+        <div class="camp">
+            <label>Username</label>
+            <input type="text" id="usernameLog" placeholder="Username..." class="inp" required>
+        </div>
+
+        <div class="camp">
+            <label>Password</label>
+            <input type="text" id="passwordLog" placeholder="Password..." class="inp" required>
+        </div>
+
+        <div id="wrongPassword" style="display:none; color:rgb(119, 0, 0)"> wrong password! <br> </div>
+        <div class="camp">
+        <button onclick="login()" id="enter" > Enter chat </button>
+        </div>
+
+        <p class="camp">Not a member yet? <a href="/register">Register!</a></p>
+
+    </main>
+
+</div>
+</body>
+
+<script src="../public/index.js"> </script>
+
+
+</html>

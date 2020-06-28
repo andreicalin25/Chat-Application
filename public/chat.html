@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../public/style.css">
+    <style> span {text-align: right;}</style>
+    <title>Happy Chat</title>
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <h1> Happy Chat </h1>
+            <a href="http://localhost:3000/index" class="btn">Logout</a>
+        </header>
+
+        <main class="chat-main">
+
+            <div class="chat-sidebar">
+                <h3 onclick="show()"> Users</h3>
+                <ul id="users" ></ul>
+            </div>
+
+            <div class="chat-messages"></div>
+
+        </main>
+
+        <div class="chat-form-container">
+
+            <input id="msg" type="text" placeholder="Enter Message" style="width: 80%;">
+            <button class="btn" onclick="send()"> Send</button>
+                <script> /*
+                <select name="color" onmouseout="color()">
+                    <option>--</option>
+                    <option>black</option>
+                    <option>blue</option>
+                    <option>yellow</option>
+                    <option>green</option>
+                    <option>red</option>
+                </select> */
+                </script>
+            <div id="color_div">
+                <input type="color" id="color" name="color" value="#000000">
+                <button class="btn" onclick="color()">Select color</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        var socket = io();
+
+    </script>
+
+    <script src="../public/chat.js"></script>
+    
+</html>
